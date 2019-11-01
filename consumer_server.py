@@ -16,7 +16,7 @@ consumer = topic.get_balanced_consumer(
     consumer_group=b'pytkafka-test-2',
     auto_commit_enable=False,
     auto_offset_reset=OffsetType.EARLIEST,
-    zookeeper_connect='remotehost:2181'
+    zookeeper_connect='localhost:2181'
 )
 
 #messages
